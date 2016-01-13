@@ -1373,6 +1373,7 @@ VOID VisualLeakDetector::mapBlock (HANDLE heap, LPCVOID mem, SIZE_T size, bool d
         delete info;
         blockmap->erase(blockit);
         blockmap->insert(mem, blockinfo);
+        exit(15);
     }
 }
 
